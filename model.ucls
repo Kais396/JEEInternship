@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="jdbc.Login" project="ProjetDeStage" file="/ProjetDeStage/src/jdbc/Login.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="284" x="640" y="608"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="jdbc.RegisterDAO" project="ProjetDeStage" 
+    file="/ProjetDeStage/src/jdbc/RegisterDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="173" x="365" y="783"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="jdbc.Registration" project="ProjetDeStage" 
+    file="/ProjetDeStage/src/jdbc/Registration.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="288" x="312" y="608"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="jdbc.ConnectionManager" project="ProjetDeStage" 
+    file="/ProjetDeStage/src/jdbc/ConnectionManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="313" y="1103"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="jdbc.UserBean" project="ProjetDeStage" 
+    file="/ProjetDeStage/src/jdbc/UserBean.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="909" width="150" x="559" y="1012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="jdbc.UserDAO" project="ProjetDeStage" file="/ProjetDeStage/src/jdbc/UserDAO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="284" x="41" y="783"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="javax.servlet.http.HttpServlet" project="ProjetDeStage" 
+    file="C:/apache-tomcat-9.0.21-windows-x64/apache-tomcat-9.0.21/lib/servlet-api.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="531" width="304" x="476" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="8">    
+    <bendpoint x="481" y="1072"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="9">    
+    <bendpoint x="608" y="783"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="13">    
+    <bendpoint x="577" y="783"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="14" name="userbean">        
+        <position height="18" width="56" x="636" y="228"/>      
+      </attribute>      
+      <multiplicity id="15" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
